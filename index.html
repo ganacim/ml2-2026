@@ -40,6 +40,23 @@ ul.plain {
 
 }
 
+ul.plain2 {
+	list-style-type: none ;
+	padding: 0 ;
+
+}
+
+ul.plain > li {
+	list-style-type: disc ;
+	margin-left: 1.5em ;
+}
+
+ul.plain2 > li {
+	list-style-type: disc ;
+	margin-left: 1.5em ;
+	margin-bottom: 1em ;
+}
+
 li {
 }
 
@@ -71,77 +88,166 @@ p.footer {
 </UL>
 
 <H2>Horário e local</H2>
-2<SUP>a</SUP>, 3<SUP>a</SUP>, 5<SUP>a</SUP> de 10:00 às 12:00 na sala 224
-<BR>6<SUP>a</SUP> de 10:00 às 12:00 na sala 224 &mdash; monitoria com
-<A HREF=mailto:rodrigo.loro@impa.br>Rodrigo Loro Schuller</A>
+<UL CLASS="plain">
+<LI>2<SUP>a</SUP> e 4<SUP>a</SUP> de 8h30 às 10h na sala 224
+<LI>Monitoria do IMPATech com Ricardo Arruda (horário a ser definido)
+<LI>Monitoria do IMPA com Melvin Poveda (horário a ser definido)
+</UL>
 
 <H2>Programa</H2>
-<UL CLASS="plain">
-<LI>Histórico da Computação Gráfica
+<UL CLASS="plain2">
+<LI>Fundamentos DL 1 <i>[18 e 23 de março]</i>
 <UL>
-<LI> Marcos da evolução científica e tecnológica da área
-<LI> Realizações dos principais centros de pesquisa
-<LI> Contribuições dos pesquisadores mais importantes
-</UL>
-<LI>Modelagem Geométrica
-<UL>
-<LI> Objetos gráficos e métodos de modelagem
-<LI> Curvas e superfícies polinomiais
-<LI> Curvas e superfícies de subdivisão
-<LI> Processamento geométrico
-</UL>
-<LI>Visualização
-<UL>
-<LI> Imagem, Amostragem e Reconstrução
-<LI> Rasterização e Vector Graphics
-<LI> Operações e sistemas de coordenadas
-<LI> Algoritmos de visualização
-<LI> Simulação da iluminação
-</UL>
+<LI>Tensores/Pytorch
+<LI>MLPs as function composition
+<LI>Expressivity (universal approximation theorem)
+<LI>Backpropagation derivation
+<LI>Automatic differentiation
+<LI>Initialization & gradient flow
+<LI>Activation functions
 </UL>
 
-<H2>Referências</H2>
+<LI>Fundamentos DL 2 <i>[25 de março]</i>
 <UL>
-<LI>
-Gomes–Velho (2003),
-<A HREF="https://www.visgraf.impa.br/Publications/fundamentos/">Fundamentos da Computação Gráfica</A>
-<LI>
-Gomes–Velho–Costa Souza (2012),
-<A HREF="https://doi.org/10.1201/b11857">Computer Graphics: Theory and Practice</A>
-<LI>
-<A HREF="refs.html">mais referências...</A>
+<LI>Treinamento / SGD
+<LI>MLP
+<LI>SGD, Momentum, Adam
+<LI>Batch size effects
+<LI>Regularization (weight decay, dropout)
+<LI>Overparameterization intuition
+<LI>Double descent
+<LI>Implicit bias
+</UL>
+
+<LI>CNNs <i>[30 de março e 1 de abril]</i>
+<UL>
+<LI>CNNs (1)
+<LI>Convolution operator & equivariance
+<LI>Pooling & invariance
+<LI>Residual networks
+<LI>Inductive bias vs data scale
+<LI>Visualizing CNNs
+</UL>
+
+<LI>Modelagem sequential e Atenção <i>[6 e 8 de abril]</i>
+<UL>
+<LI>RNNs
+<LI>LSTM
+<LI>Attention, Self-attention
+</UL>
+
+<LI>Transformers <i>[13 e 15 de abril]</i>
+<UL>
+<LI>Transformers
+<LI>LayerNorm
+<LI>Training instabilities
+<LI>Application: sentiment analysis
+<LI>Aplicação: ViT básico (classificação)
+</UL>
+
+<LI>Trabalho 1 [17 de abril]</LI>
+
+<LI>Aprendizado de Representações <i>[20 e 22 de abril]</i>
+<UL>
+<LI>Contrastive learning
+<LI>InfoNCE derivation
+<LI>Mutual information intuition
+<LI>SimCLR
+<LI>BYOL
+<LI>Masked modeling
+<LI>Auto encoders
+<LI>Modelos auto-supervisionados
+</UL>
+
+<LI>Modelos Generativos: VAE <i>[27 e 29 de abril]</i>
+<UL>
+<LI>VAE / VQ-VAE
+</UL>
+
+<LI>Modelos Generativos: GANs <i>[4 e 6 de maio]</i>
+<UL>
+<LI>GANs
+</UL>
+
+<LI>Modelos Generativos: Difusão <i>[18 e 20 de maio]</i>
+
+<LI>Trabalho 2 </i>[22 de maio]</i></LI>
+
+<LI>LLMs: Conceitos Básicos <i>[25 e 27 de maio]</i>
+<UL>
+<LI>tokenizacao
+<LI>pre-treino
+<LI>Introduction to language modeling
+<LI>BERT, GPT
+<LI>Aplicações (se der)
+<LI>Scaling laws
+<LI>Compute-data-model tradeoff
+</UL>
+
+<LI>LLMs 3: Finetunning <i>[1 e 3 de junho]</i>
+<UL>
+<LI>LoRA & adapters
+<LI>Prompt tuning
+<LI>Aplicações e Exemplos
+</UL>
+
+<LI>RL basico <i>[8 e 10 de junho]</i>
+<UL>
+<LI>n-armed bandit
+<LI>MDP formulation
+<LI>Bellman equations
+<LI>Policy gradient theorem
+<LI>REINFORCE
+<LI>Variance reduction
+</UL>
+
+<LI>Deep RL <i>[15 de junho]</i>
+<UL>
+<LI>Algorithms
+<LI>Offline RL (overview)
+<LI>Imitation learning
+</UL>
+
+<LI>Actor-Critic and PPO <i>[17 de junho]</i>
+<UL>
+<LI>Advantage estimation
+<LI>Actor-critic
+<LI>PPO objective
+<LI>Stability issues
+</UL>
+
+<LI>Trabalho 3 <i>[19 de junho]</i></LI>
+
+<LI>Fechamento 1 <i>[22 de junho]</i>
+<UL>
+<LI>RLHF for LLMs
+<LI>Alignment
+<LI>DPO
+</UL>
+
+<LI>Fechamento 2 <i>[24 de junho]</i>
+<UL>
+<LI>Foundation models
+<LI>Vit avançado
+<LI>Modelos multimodais
+</UL>
+
+<LI>Projeto Final (Apresentações) </i>[6 e 8 de julho]</i></LI>
+
+<H2>Referências</H2>
+<UL class="plain">
+<LI> Understanding Deep Learning. PRINCE, S.. 2023. <A HREF="https://udlbook.github.io/udlbook/">https://udlbook.github.io/udlbook/</A>
+<LI> Deep Learning. GOODFELLOW, I.; BENGIO, Y.; COURVILLE, A. MIT Press, 2016.
+<LI> Reinforcement Learning: An Introduction. 2. ed. SUTTON, R. S.; BARTO, A. G. Massachusetts: MIT Press, 2018.
 </UL>
 
 <H2>Slides</H2>
 <UL>
-<LI>
-<A HREF="slides/history/index.html">História</A>
-<LI>
-<A HREF="slides/mg.pdf">Modelagem</A>
-<LI>
-<A HREF="slides/imagens_slides.pdf">Imagens, Amostragem e Reconstrução, Vector Graphics</A>
-<LI>
-<A HREF="slides/raytracing.pdf">Cenas 3D, Iluminação e Ray Tracing</A>
+<LI><A></A>...</A>
 </UL>
-
-<H2>Tarefas</H2>
-<UL>
-<LI>
-<A HREF="mg-tarefas.pdf">Modelagem</A>
-<LI>
-<A HREF="tarefa_rasterizacao.pdf">Rasterização</A>
-<LI>
-<A HREF="tarefa_raytracer.pdf">Ray Tracing</A>
-</UL>
-
-<H2>Organização</H2>
-<P>
-<A HREF="https://www.visgraf.impa.br/"><IMG SRC="visgraf.png" ALT="Visgraf" WIDTH=125 STYLE="margin-right: 3em"></A>
-<A HREF="https://impa.br/"><IMG SRC="impa.png" ALT="IMPA" WIDTH=125></A>
 
 <P CLASS="footer">
-Last update:
-Wed Feb 3 18:25:09 -03 2026
+Last update: 2026-03-11
 </P>
 
 </BODY>
