@@ -97,7 +97,7 @@ table.schedule tr:hover {
 
 /* Make content column wider */
 table.schedule td:nth-child(3) {
-	width: 55%;
+	width: auto;
 }
 
 /* Subtle style for links */
@@ -107,6 +107,26 @@ table.schedule a {
 
 table.schedule a:hover {
 	color: red;
+}
+
+table.schedule td:nth-child(1),
+table.schedule th:nth-child(1) {
+	width: 140px;
+	white-space: nowrap;
+}
+
+/* Date column */
+table.schedule td:nth-child(2),
+table.schedule th:nth-child(2) {
+	width: 140px;
+	white-space: nowrap;
+}
+
+/* Material column */
+table.schedule td:last-child,
+table.schedule th:last-child {
+	width: 200px;
+	white-space: nowrap;
 }
 
 </STYLE>
@@ -163,7 +183,8 @@ table.schedule a:hover {
         </ul>
       </td>
       <td>
-        <a href="slides/MLII-Aula1.pdf">Slides</a><br>
+        <a href="slides/MLII-Aula1.pdf">Slides - Aula 1</a><br>
+        <a href="slides/MLII-Aula2.pdf">Slides - Aula 2</a><br>
       </td>
     </tr>
 
